@@ -6,5 +6,4 @@ const createSunfower = () => {
     };
   };
   const sunflowerSeed = createSunflower()
-  console.log(sunflowerSeed)
   module.exports = createSunflower;

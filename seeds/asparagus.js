@@ -7,5 +7,4 @@ const createAsparagus = () => {
   };
   
   const asparagusSeed = createAsparagus()
-  console.log(asparagusSeed)
   module.exports = createAsparagus;

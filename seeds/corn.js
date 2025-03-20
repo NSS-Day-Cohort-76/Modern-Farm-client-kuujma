@@ -10,5 +10,4 @@ const createCorn = () => {
   
   let cornTime = createCorn();
   
-  console.log(cornTime);
   module.exports = createCorn;

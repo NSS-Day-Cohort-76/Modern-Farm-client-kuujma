@@ -6,5 +6,4 @@ const createSoybean = () => {
     };
   };
   const soybeanSeed = createSoybean()
-  console.log(soybeanSeed)
   module.exports = createSoybean;

@@ -6,5 +6,4 @@ const createPotato = () => {
     };
   };
   const potatoSeed = createPotato()
-  console.log(potatoSeed)
   module.exports = createPotato;

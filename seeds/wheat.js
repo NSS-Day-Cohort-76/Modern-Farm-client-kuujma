@@ -6,5 +6,4 @@ const createWheat = () => {
     };
   };
   const wheatSeed = createWheat()
-  console.log(wheatSeed)
   module.exports = createWheat;
