@@ -1,4 +1,4 @@
-import { usePlants, } from './fields.js';
+import { usePlants, } from './field.js';
 
 /*
 [
