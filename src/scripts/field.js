@@ -1,8 +1,3 @@
-import { createCorn } from "../../prac.js";
-import { createSoyBean } from "../../prac.js";
-const corn = createCorn();
-const soybean = createSoyBean();
-
 ////////////////////////////////////////////////////
 const plantsArr = [];
 
@@ -21,5 +16,5 @@ export const addPlant = (seed) => {
 };
 
 export const usePlants = () => {
-  return plantsArr;
+  return [...plantsArr];
 };
