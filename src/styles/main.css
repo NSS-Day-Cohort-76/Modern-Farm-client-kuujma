@@ -57,6 +57,6 @@ html {
 .messages {
   display: flex;
   flex-wrap: wrap;
+  align-self: auto;
   gap: 40px;
-  justify-content: center;
 }
