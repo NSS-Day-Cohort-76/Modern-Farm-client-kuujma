@@ -1,9 +1,7 @@
-const createPotato = () => {
+export const createPotato = () => {
     return {
-      type: 'potato',
+      type: 'Potato',
       height: 32,
       output: 2,
     };
   };
-  const potatoSeed = createPotato()
-  module.exports = createPotato;

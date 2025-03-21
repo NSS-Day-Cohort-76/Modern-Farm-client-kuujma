@@ -1,9 +1,8 @@
-const createSunfower = () => {
+export const createSunflower = () => {
     return {
-      type: 'sunflower',
+      type: 'Sunflower',
       height: 380,
       output: 3,
     };
   };
-  const sunflowerSeed = createSunflower()
-  module.exports = createSunflower;
+

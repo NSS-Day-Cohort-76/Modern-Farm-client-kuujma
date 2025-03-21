@@ -1,13 +1,10 @@
 
-const createCorn = () => {
+export const createCorn = () => {
     const cornSeed = {
-      type: 'corn',
-      height: 10,
-      output: 5
+      type: 'Corn',
+      height: 180,
+      output: 6
     };
-    return [cornSeed, cornSeed]; 
+    return [cornSeed, cornSeed];
   };
   
-  let cornTime = createCorn();
-  
-  module.exports = createCorn;
