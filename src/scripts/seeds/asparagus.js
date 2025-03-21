@@ -1,4 +1,4 @@
-const createAsparagus = () => {
+export const createAsparagus = () => {
     return {
       type: 'asparagus',
       height: 24,
@@ -6,5 +6,4 @@ const createAsparagus = () => {
     };
   };
   
-  const asparagusSeed = createAsparagus()
-  module.exports = createAsparagus;
+
