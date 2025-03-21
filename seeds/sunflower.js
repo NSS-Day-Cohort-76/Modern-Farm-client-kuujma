@@ -1,4 +1,4 @@
-const createSunfower = () => {
+const createSunflower = () => {
     return {
       type: 'sunflower',
       height: 380,
