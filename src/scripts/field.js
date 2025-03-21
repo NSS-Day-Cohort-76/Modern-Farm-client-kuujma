@@ -1,4 +1,3 @@
-////////////////////////////////////////////////////
 const plantsArr = [];
 
 // export const addPlant = (seed) => {
@@ -19,11 +18,11 @@ const plantsArr = [];
 //   return [...plantsArr];
 // };
 export const addPlant = (seed) => {
+  // If the seed is an array (e.g., corn seeds), add each item individually
   if (Array.isArray(seed)) {
-    for (const individualSeed of seed) {
-      plantsArr.push(individualSeed);
-    }
+    seed.forEach((singleSeed) => plantsArr.push(singleSeed));
   } else {
+    // Otherwise, push the single seed object
     plantsArr.push(seed);
   }
   return seed;
