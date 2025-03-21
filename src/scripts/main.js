@@ -7,6 +7,17 @@ import { createWheat } from "./seeds/wheat.js";
 import { createSoybean } from "./seeds/soybean.js";
 import { addPlant, usePlants } from "./field.js";
 import { plantSeeds } from "./tractor.js";
+import { harvestPlants } from "./harvester.js";
+import { Catalog } from "./catalog.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const messagesContainer = document.querySelector(".messages");
+  if (messagesContainer) {
+    messagesContainer.innerHTML = Catalog();
+  } else {
+    console.error("Messages container not found.");
+  }
+});
 
 // checking all the create Seeds, had to change a bit in the seeds files
 const asparagusSeed = createAsparagus();
@@ -25,6 +36,8 @@ console.log(soyBeanSeed);
 addPlant(cornSeed);
 addPlant(potatoSeed);
 console.log("plants in the field", usePlants());
+
+console.log("harvested plants:", harvestPlants(usePlants()));
 
 const yearlyPlan = createPlan();
 console.log("yearly plan:", yearlyPlan);
